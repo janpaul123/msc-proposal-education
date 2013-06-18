@@ -1,0 +1,265 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>Building and Evaluating an Interactive Textbook Platform</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="js/libs/qtip/jquery.qtip.min.css">
+	<link rel="stylesheet" href="js/libs/tangle/TangleKit.css">
+	<link rel="stylesheet" href="css/mystyle.css">
+
+	<script src="js/libs/modernizr-2.0.6.min.js"></script>
+
+</head>
+<body>
+
+
+<div id="container">
+
+	<header>
+		<img id="ox" src="ox2.jpg" width="150" height="150"></img>
+		<div id="proposal">
+			<h2>Project Proposal for the MSc in Computer Science<br>Jan Paul Posma</h2>
+		</div>
+	</header>
+	
+	<div id="demo">
+		<img src="ipad.png" id="ipadimg"></img>
+		<img src="laptop.png" id="laptopimg"></img>
+		
+		<div id="demoinner">
+			<h1>Building and Evaluating an Interactive Textbook Platform</h1>
+			
+			<p>
+				The world is getting digital at a fast pace, and education is trying to keep up.
+				Still, most digital textbooks are not much more than glorified PDF files.
+				Imagine a highly interactive textbook on a <a href="#" id="ipad">tablet</a>
+				or <a href="#" id="laptop">laptop</a>, used in the classroom and at home.
+			</p>
+			
+			<p>
+				That is the education of the next generation.<br/> And I want to make it a reality.
+			</p>
+		</div>
+	</div>
+
+	<div id="main" role="main">
+		<h2 id="introduction">Introduction</h2>
+		
+		<p>
+			If you haven't done so already, please click one of the links in the text above.
+			<em>That</em> is the kind of interactivity I'm talking about here, only taken
+			several steps further. We see <a href="#" id="toddlers">toddlers</a> who have played with an iPad trying the
+			same interactions on regular paper, only to find out it doesn't work. But they
+			are right, why shouldn't it?
+		</p>
+		
+		<p>
+			There are many possibilities to enhance existing digital textbooks for secondary
+			education, such as note sharing with classmates and responding to them, creating
+			a helpful conversation. Or interactive exercises that are right in the textbook,
+			and not on some site by the publisher which no student actually uses. The teacher
+			could get an overview of how well the exercises are made in general and individually,
+			or a heat map of which parts of the textbook are most discussed by the students.
+		</p>
+		
+		<p>
+			But I believe that is just the beginning. By providing <a href="#" id="interactions">meaningful
+			interactions</a> right
+			within the textbook, students can better <em>understand</em> what they are doing.
+			Instead of simply filling in formulas, students can try things out, touch things,
+			and explore: something most people are better at than abstract manipulation of
+			<a href="#" id="symbols">symbols</a>. Of course, the latter is still important, and should in fact be easier
+			after actual understanding of the topic.
+		</p>
+		
+		<!--
+		<p>
+			A quote from <a href="http://worrydream.com/KillMath/" target="_blank" class="out">Bret Victor</a>, who has hugely influenced me on this matter, clearly
+			explains this idea:
+		
+		<blockquote>
+			<p>
+				"The point is that you need that visceral sense, that gut feel, to reason about a problem by intuition. Good circuit designers can "feel" how a circuit behaves. They look at a schematic and in their mind's eye, they see the voltage going down over here and pushing the voltage up over there, as if they were looking at a see-saw or water pump. It requires years of practice to develop this sense, this ability to look at symbols (in some domain) and feel what they represent.
+			</p>
+		
+			<p>
+				Likewise, people used to think that reading and making sense of huge tables of numbers was an essential skill for working with data. But then William Playfair came along and invented line graphs, and suddenly everyone could feel data through their eyes. Their plain old monkey-eyes!"
+			</p>
+		</blockquote>
+		
+		<p>
+			Indeed, he doesn't talk about education in specific, but about building a better interface
+			for math in general. I think this might be true for a lot of subjects: from visualising
+			the blood flow in the human body (and interactively changing the heart rate to see what
+			happens), to showing a timeline of historic events in a certain country (with the option
+			to put this next to the timeline of another country to put things in context). These
+			things are not only useful for education, 
+		</p>
+		-->
+		
+		<p>
+			Something else to think about is the role of the teacher. If lectures could be watched
+			by students at home, this gives more time for teachers to address individual problems,
+			do experiments, focus on difficult material and other things. This idea is already being explored
+			by the <a href="http://khanacademy.org" target="_blank" class="out">Khan Academy</a>,
+			a non-profit organisation offering <a href="#" id="lecture">lectures</a> for different
+			secondary school subjects online.
+		</p>
+		
+		<p>
+			There are many more things possible with such an approach to textbooks, but the main point
+			is to create an <em>awesome experience</em> that is not only engaging, but adds a lot
+			of educational value by using all these techniques that are simply not possible with conventional
+			teaching, even when digital material is used to some degree. Indeed, there have been many,
+			many attempts to improve education by employing software, with varying degrees of success.
+			But it is only now that we have affordable mobile devices with enough processing power,
+			computers in virtually every home, and a widely used distribution platform that allows
+			all this content to be delivered in a uniform way, as this proposal itself demonstrates!
+		</p>
+		
+		<h2>Proposal</h2>
+		
+		<p>
+			The idea is to implement a basic platform on which such textbooks can be built,
+			write some sample content, and evaluate this concept with that chapter. When implementing
+			such a system, it is important to think about how both students and teachers would
+			use it. Therefore, it would be useful to talk to them and figure out use cases
+			and user stories.
+		</p>
+		
+		<p>
+			To be more precise, the goal of the project would be <strong>to build and evaluate
+			an interactive textbook platform</strong>. The "build" part is primarily software
+			engineering: <em>developing</em> the platform in a structured, object-oriented
+			way. But prior to this it should be known how users (students and teachers) would
+			use it: what the <em>user stories</em> in the classroom are (that is, in
+			the old-fashioned way without digital books). For this I would propose to do a small
+			study, for example by interviewing or observing users. Finally, to evaluate the system,
+			I propose to do a small <em>usability study</em> with actual students and teachers.
+			This is not the same as an actual pilot in the classroom, as that would take too much time
+			and is outside the scope of this project.
+		</p>
+		
+		<p>
+			Both the software development (actual programming) and requirements engineering (user stories,
+			usability study) parts of this project should have about equal weight. The project builds
+			in particular on the material taught in the <em>Requirements</em> course, but also on
+			programming practices taught in general. As I want to make this textbook platform
+			device- and OS-independent, the implementation would be in the form of a web application.
+		</p>
+		
+		<h2>Timeline</h2>
+		
+		<p>
+			As a rough guideline, I propose a timeline of milestones within this project. These are chosen
+			such that there is minimal interference with courses and exams. The timeline describes
+			what events should take place each month.
+			
+			<ul>
+				<li>April 2012: initial field-test completed; draft of user stories completed;
+				primary and secondary goals of the implementation identified; started
+				with implementation.</li>
+				<li>May 2012: field-test writeup complete; many primary goals accomplished;
+				started writing plan for evaluation study; started documenting the implementation.</li>
+				<li>June 2012: all primary goals accomplished, some secondary goals accomplished;
+				first draft of documentation; ready to do evaluation study.</li>
+				<li>July 2012: evaluation study completed; first draft of evaluation study done;
+				documentation done; perhaps some more secondary goals completed.</li>
+				<li>August 2012: final writeup of dissertation done and handed in on time
+				(deadline is August 31<sup>st</sup>).</li>
+			</ul>
+			
+		
+		<!--
+		<p>
+			To be more precise, these would be the goals of the project:
+			<ul>
+				<li>Finding out how teachers and students would use an interactive textbook;
+				what features are most important to implement.</li>
+				<li>Building a basic interactive textbook environment with
+				some of the most important features.</li>
+				<li>Writing a sample chapter in this environment.</li>
+				<li>Evaluate this approach in a small-scale field test.</li>
+			</ul>
+		</p>
+		
+		<p>
+		This would fit perfectly with the Requirements course I'm taking, and perhaps
+		to some degree with the Computers in Society course.
+		</p>
+		-->
+		
+		<h2>Collaboration</h2>
+		
+		<p>
+			As writing actual content to test this platform with is somewhat outside the scope
+			of the project, I found my friend Nathan Mol prepared to write some physics examples.
+			This is not critical to the success of the project, but might be helpful in the final
+			evaluation study, and in general when presenting the final results. Please note, however,
+			that writing some interactive examples (such as seen in this proposal) is a part of the
+			project.
+		</p>
+		
+		<p>
+			Perhaps it would be useful to somehow collaborate with the
+			<a href="http://www.education.ox.ac.uk/research/lntrg/" target="_blank" class="out">Learning and New Technologies</a>
+			research group at the Department of Education. They have more expertise in doing field
+			tests at schools, and probably also useful contacts at schools.
+		</p>
+		
+		<p>
+			In conclusion, I really hope that it will be possible to do this as an MSc project.
+			I truly believe that education can be improved by this in a
+			fundamental way.
+		</p>
+	</div>
+
+	<!--
+	<footer>
+		Credits: Nathan Mol for the idea;
+		<a href="http://worrydream.com" target="_blank" class="out">Bret Victor</a> for inspiration
+		and the <a href="http://worrydream.com/Tangle" target="_blank" class="out">Tangle</a> library;
+		<a href="http://khanacademy.org" target="_blank" class="out">Khan Academy</a> for the lecture;
+		<a href="http://www.youtube.com/user/UserExperiencesWorks" target="_blank" class="out">
+		UserExperiencesWorks</a> for the toddler video; <a href="http://jquery.com" target="_blank" class="out">
+		jQuery</a>, <a href="http://craigsworks.com/projects/qtip/" target="_blank" class="out">qTip</a>, and
+		<a href="http://mathjax.org" target="_blank" class="out">MathJax</a> Javascript libraries.
+	</footer>
+	-->
+
+</div> <!--! end of #container -->
+
+<script src="js/libs/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script src="js/libs/jquery-1.7.1.min.js"></script>
+<script src="js/plugins.js?1"></script>
+<script src="js/libs/tangle/Tangle.js?1"></script>
+<script src="js/libs/tangle/mootools.js?1"></script>
+<script src="js/libs/tangle/sprintf.js?1"></script>
+<script src="js/libs/tangle/BVTouchable.js?1"></script>
+<script src="js/libs/tangle/TangleKit.js?1"></script>
+<script src="js/requestAnimationFrame.js?1"></script>
+<script src="js/libs/qtip/jquery.qtip.min.js?1"></script>
+<script src="http://www.youtube.com/player_api"></script>
+<script src="js/script.js?1"></script>
+<script src="js/simulation.js?5"></script>
+<!-- end scripts-->
+
+
+
+</body>
+</html>
